@@ -1,0 +1,14 @@
+:root {
+  /* Цвета */
+  --primary-color: #000000;
+  --accent-color: #646cff;
+  --bg-body: #e0e0e0;
+  --bg-app: #ffffff;
+  --text-main: #333333;
+  --text-secondary: #888888;
+
+  /* Размеры */
+  --app-max-width: 480px;
+  --header-height: 60px;
+  --border-radius: 12px;
+}

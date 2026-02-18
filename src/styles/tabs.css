@@ -1,0 +1,112 @@
+/* =========================================
+   ЭКРАН 2: ПЛЮС (СОЗДАТЬ НОВЫЙ)
+   ========================================= */
+.plus-area {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.create-new-btn {
+  background-color: #f0f0f5; 
+  color: var(--text-main);
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   ЭКРАН 3: ИЗБРАННОЕ (СЕРДЕЧКО)
+   ========================================= */
+.heart-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px;
+}
+
+.heart-header {
+  margin-bottom: 20px;
+}
+
+.heart-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.tabs-toggle {
+  display: flex;
+  background-color: #f0f0f5;
+  border-radius: 30px;
+  padding: 4px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-main);
+}
+
+.toggle-btn.active {
+  background-color: #007AFF; 
+  color: white;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px;
+  width: 100%;
+  overflow-y: auto; 
+}
+
+.item-card {
+  background-color: #d1d1d6; 
+  border-radius: 20px;
+  aspect-ratio: 3 / 4; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-heart {
+  font-size: 18px;
+  color: #888;
+}
+
+.card-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #b0b0b5; 
+}
+
+.card-price {
+  align-self: center;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  font-size: 14px;
+}
